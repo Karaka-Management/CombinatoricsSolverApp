@@ -1,0 +1,33 @@
+﻿<Window x:Class="CombinatoricsSolverApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CombinatoricsSolverApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DockPanel LastChildFill="True">
+            <Menu DockPanel.Dock="Top" Height="23">
+                <MenuItem Header="File">
+                    <MenuItem Header="Load"/>
+                    <MenuItem Header="Exit"/>
+                </MenuItem>
+                <MenuItem Header="Settings"/>
+                <MenuItem Header="Help"/>
+            </Menu>
+            <Grid DockPanel.Dock="Bottom" Height="28" RenderTransformOrigin="0.5,0.5" Background="#FFA4A1A1">
+                <TextBlock HorizontalAlignment="Left" Margin="30,0,0,0" TextWrapping="Wrap" Text="Amount to Match: XXX; Error: XXX; Combinations: XXX; Lines: XXXX; Solutions: XXX" VerticalAlignment="Center"/>
+            </Grid>
+            <ScrollViewer DockPanel.Dock="Top">
+                <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" BorderThickness="0,0,0,0">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Row ID"/>
+                        <DataGridTextColumn Header="Amount"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </ScrollViewer>
+        </DockPanel>
+
+    </Grid>
+</Window>
