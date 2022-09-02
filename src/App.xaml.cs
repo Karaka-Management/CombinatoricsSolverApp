@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
+using CombinatoricsSolverApp.Models;
 
 namespace CombinatoricsSolverApp
 {
@@ -20,5 +21,7 @@ namespace CombinatoricsSolverApp
         public static double maxError = 0.005;
 
         public static int maxSolutions = -1; // -1 = all possible solutions
+
+        public static Lines[]? lines = null;
     }
 }
