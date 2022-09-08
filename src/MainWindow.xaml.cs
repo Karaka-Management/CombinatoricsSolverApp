@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CombinatoricsSolverApp.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,38 @@ namespace CombinatoricsSolverApp
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void menuExit_Click(object sender, RoutedEventArgs e)
+        {
+            System.Windows.Application.Current.Shutdown();
+        }
+
+        private void menuLoadFile_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void menuInfo_Click(object sender, RoutedEventArgs e)
+        {
+            if (Info.isOpen)
+            {
+                return;
+            }
+
+            Info window = new Info();
+            window.Show();
+        }
+
+        private void menuSettings_Click(object sender, RoutedEventArgs e)
+        {
+            if (Settings.isOpen)
+            {
+                return;
+            }
+
+            Settings window = new Settings();
+            window.Show();
         }
     }
 }

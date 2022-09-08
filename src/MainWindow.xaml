@@ -5,19 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CombinatoricsSolverApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Combinatorics Solver" Height="450" Width="800" Icon="favicon.ico">
     <Grid>
         <DockPanel LastChildFill="True">
-            <Menu DockPanel.Dock="Top" Height="23">
+            <Menu DockPanel.Dock="Top">
                 <MenuItem Header="File">
-                    <MenuItem Header="Load"/>
-                    <MenuItem Header="Exit"/>
+                    <MenuItem x:Name="menuLoadFile" Header="Load" Click="menuLoadFile_Click"/>
+                    <MenuItem x:Name="menuExit" Header="Exit" Click="menuExit_Click"/>
                 </MenuItem>
-                <MenuItem Header="Settings"/>
-                <MenuItem Header="Help"/>
+                <MenuItem x:Name="menuSettings" Header="Settings" Click="menuSettings_Click"/>
+                <MenuItem x:Name="menuInfo" Header="Info" Click="menuInfo_Click"/>
             </Menu>
-            <Grid DockPanel.Dock="Bottom" Height="28" RenderTransformOrigin="0.5,0.5" Background="#FFA4A1A1">
-                <TextBlock HorizontalAlignment="Left" Margin="30,0,0,0" TextWrapping="Wrap" Text="Amount to Match: XXX; Error: XXX; Combinations: XXX; Lines: XXXX; Solutions: XXX" VerticalAlignment="Center"/>
+            <Grid DockPanel.Dock="Bottom" Height="35" RenderTransformOrigin="0.5,0.5" Background="#FF262A2F">
+                <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Amount to Match: 0.00; Error: 0.00; Combinations: 0; Lines: 0; Solutions: 0" Foreground="#e4f1fa" VerticalAlignment="Center"/>
             </Grid>
             <ScrollViewer DockPanel.Dock="Top">
                 <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" BorderThickness="0,0,0,0">

@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CombinatoricsSolverApp.Views"
         mc:Ignorable="d"
-        Title="Settings" Height="450" Width="800">
-    <Grid>
-        
+        Title="Settings" Height="192" Width="294" SizeToContent="WidthAndHeight" ResizeMode="NoResize" Topmost="True" ShowInTaskbar="False" WindowStyle="ToolWindow" Closing="SettingsWindow_Closing">
+    <Grid Background="#343a40">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="250*"/>
+        </Grid.ColumnDefinitions>
+        <Label Grid.Column="0" Foreground="#e4f1fa" Content="Amount to match" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="0" Foreground="#e4f1fa" Content="Allowed error" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="0" Foreground="#e4f1fa" Content="Min. combinations" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+        <Label Grid.Column="0" Foreground="#e4f1fa" Content="Max. combinations" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="amountToMatch" Grid.Column="1" Margin="10,14,14,0" TextWrapping="Wrap" Text="0.00" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="allowedError" Grid.Column="1" Margin="10,45,14,0" TextWrapping="Wrap" Text="0.00" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="minCombinations" Grid.Column="1" Margin="10,76,14,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="120" PreviewTextInput="minCombinations_PreviewTextInput"/>
+        <TextBox x:Name="maxCombinations" Grid.Column="1" Margin="10,107,14,0" TextWrapping="Wrap" Text="6" VerticalAlignment="Top" Width="120" PreviewTextInput="maxCombinations_PreviewTextInput"/>
+        <Button x:Name="SettingsRun" Content="Run" HorizontalAlignment="Left" Click="SettingsClose_Click" Margin="85,140,0,10" Width="50" Grid.ColumnSpan="2"/>
+        <Button x:Name="SettingsClose" Content="Close" HorizontalAlignment="Left" Click="SettingsClose_Click" Margin="147,140,0,10" Width="50" Grid.ColumnSpan="2"/>
     </Grid>
 </Window>

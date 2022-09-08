@@ -6,6 +6,25 @@
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <BaseOutputPath>..\bin\</BaseOutputPath>
+    <Configurations>Debug;Release;Demo</Configurations>
+    <PackageIcon>favicon.ico</PackageIcon>
+    <RepositoryType></RepositoryType>
+    <PackageReadmeFile></PackageReadmeFile>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Demo|AnyCPU'">
+    <DefineConstants>$(DefineConstants)TRACE;OMS_DEMO</DefineConstants>
+    <Optimize>True</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="favicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="favicon.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
 
 </Project>
