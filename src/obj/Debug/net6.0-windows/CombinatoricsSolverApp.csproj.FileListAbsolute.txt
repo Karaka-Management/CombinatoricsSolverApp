@@ -56,3 +56,6 @@ C:\Users\deich\git\CombinatoricsSolverApp\src\obj\Debug\net6.0-windows\Combinato
 C:\Users\deich\git\CombinatoricsSolverApp\src\obj\Debug\net6.0-windows\ref\CombinatoricsSolverApp.dll
 C:\Users\deich\git\CombinatoricsSolverApp\bin\Debug\net6.0-windows\favicon.ico
 C:\Users\deich\git\CombinatoricsSolverApp\src\obj\Debug\net6.0-windows\CombinatoricsSolverApp_Content.g.cs
+C:\Users\deich\git\CombinatoricsSolverApp\src\obj\Debug\net6.0-windows\Views\Data.g.cs
+C:\Users\deich\git\CombinatoricsSolverApp\src\obj\Debug\net6.0-windows\Views\Data.baml
+C:\Users\deich\git\CombinatoricsSolverApp\src\obj\Debug\net6.0-windows\CombinatoricsSolverApp.csproj.CopyComplete

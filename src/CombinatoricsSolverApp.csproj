@@ -10,6 +10,7 @@
     <PackageIcon>favicon.ico</PackageIcon>
     <RepositoryType></RepositoryType>
     <PackageReadmeFile></PackageReadmeFile>
+    <ApplicationIcon>favicon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Demo|AnyCPU'">
@@ -25,6 +26,15 @@
     <Content Include="favicon.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DocumentFormat.OpenXmlSDK" Version="2.0.0" />
+    <PackageReference Include="OpenXml-Complete-SDK" Version="2.5.0" />
   </ItemGroup>
 
 </Project>

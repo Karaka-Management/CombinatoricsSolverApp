@@ -6,6 +6,13 @@
         xmlns:local="clr-namespace:CombinatoricsSolverApp"
         mc:Ignorable="d"
         Title="Combinatorics Solver" Height="450" Width="800" Icon="favicon.ico">
+    <Window.Resources>
+        <CollectionViewSource x:Name="matchSolutions" x:Key="matchSolutions">
+            <CollectionViewSource.GroupDescriptions>
+                <PropertyGroupDescription PropertyName="Solution"/>
+            </CollectionViewSource.GroupDescriptions>
+        </CollectionViewSource>
+    </Window.Resources>
     <Grid>
         <DockPanel LastChildFill="True">
             <Menu DockPanel.Dock="Top">
@@ -14,16 +21,18 @@
                     <MenuItem x:Name="menuExit" Header="Exit" Click="menuExit_Click"/>
                 </MenuItem>
                 <MenuItem x:Name="menuSettings" Header="Settings" Click="menuSettings_Click"/>
+                <MenuItem x:Name="menuData" Header="Data" Click="menuData_Click"/>
                 <MenuItem x:Name="menuInfo" Header="Info" Click="menuInfo_Click"/>
             </Menu>
-            <Grid DockPanel.Dock="Bottom" Height="35" RenderTransformOrigin="0.5,0.5" Background="#FF262A2F">
-                <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Amount to Match: 0.00; Error: 0.00; Combinations: 0; Lines: 0; Solutions: 0" Foreground="#e4f1fa" VerticalAlignment="Center"/>
+            <Grid DockPanel.Dock="Bottom" Height="35" Background="#FF262A2F">
+                <TextBlock x:Name="txtStats" x:FieldModifier="public" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Amount to Match: 0.00; Error: 0.00; Combinations: 0; Lines: 0; Solutions: 0" Foreground="#e4f1fa" VerticalAlignment="Center"/>
             </Grid>
             <ScrollViewer DockPanel.Dock="Top">
-                <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" BorderThickness="0,0,0,0">
+                <DataGrid x:Name="mainDataGrid" x:FieldModifier="public" ItemsSource="{Binding Source={StaticResource matchSolutions}}" BorderThickness="0,0,0,0">
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="Row ID"/>
-                        <DataGridTextColumn Header="Amount"/>
+                        <DataGridTextColumn Header="Solution" Binding="{Binding Solution}"/>
+                        <DataGridTextColumn Header="Row ID" Binding="{Binding Id}"/>
+                        <DataGridTextColumn Header="Amount" Binding="{Binding Amount}"/>
                     </DataGrid.Columns>
                 </DataGrid>
             </ScrollViewer>
