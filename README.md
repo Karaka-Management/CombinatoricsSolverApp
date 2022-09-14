@@ -2,7 +2,7 @@
 
 ## Summary
 
-The Combinatorics Solver tries to combine a given set of numbers to reach a specific total amount. The data can be imported as Excel or CSV file. One possible application could in accounting when you need to find the postings which make up a certain amount.
+The Combinatorics Solver tries to combine a given set of numbers to reach a specific total amount. The data can be imported as Excel or CSV file. One possible application could be in accounting when you need to find the postings which make up a certain amount.
 
 With Karaka you have one partner who can provide many tools and software solutions you are used to at fair and reasonable prices even for small organizations and companies/startups. Our solutions can be used independently from each other or fully integrated with other solutions we provide. By choosing Karaka as your partner you'll be able to adjust your software based on the changes in your requirements without worrying about integration and workflow optimization.
 
