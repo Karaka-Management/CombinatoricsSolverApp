@@ -25,7 +25,7 @@ With Karaka you have one partner who can provide many tools and software solutio
 
 ## Images
 
-<p align="center"><img src="https://raw.githubusercontent.com/Karaka-Management/CombinatoricsSolverApp/master/img/CombinatoricsSolver_splash2.png" alt="UI"></p>
+<p align="center"><img src="img/CombinatoricsSolver_splash2.png" alt="UI"></p>
 
 ## Legal
 
