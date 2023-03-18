@@ -38,4 +38,4 @@ Checking for possible matches can reach a very large amount of combinations real
 
 You can use the demo application for some tests in order to see if the software fulfills your needs.
 
-> The demo application only checks up to 30 numbers with a maximum of 4 combinations.
+> The demo application only checks up to 15 numbers with a maximum of 4 combinations.
