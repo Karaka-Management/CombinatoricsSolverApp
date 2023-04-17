@@ -67,9 +67,9 @@ namespace CombinatoricsSolverApp
                     foreach (Row r in sheet.Elements<Row>())
                     {
                         #if OMS_DEMO
-                            if (i > 30)
+                            if (i > 15)
                             {
-                                MessageBox.Show("Stopped reading file after 30 lines, consider to upgrade from the demo application to the full version.");
+                                MessageBox.Show("Stopped reading file after 15 lines, consider to upgrade from the demo application to the full version.");
                                 break;
                             }
                         #endif
@@ -120,9 +120,9 @@ namespace CombinatoricsSolverApp
                     while (!parser.EndOfData)
                     {
                         #if OMS_DEMO
-                            if (i > 30)
+                            if (i > 15)
                             {
-                                MessageBox.Show("Stopped reading file after 30 lines, consider to upgrade from the demo application to the full version.");
+                                MessageBox.Show("Stopped reading file after 15 lines, consider to upgrade from the demo application to the full version.");
                                 break;
                             }
                         #endif
